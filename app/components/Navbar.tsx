@@ -59,7 +59,7 @@ export default function Navbar() {
                 <Link
                   key={link.id}
                   href={link.href}
-                  className={`text-[16px] font-bold transition-colors duration-200 ${isActive ? 'text-[#6B46C1]' : 'text-black hover:text-[#6B46C1]'}`}
+                  className={`text-[16px] font-bold transition-colors duration-200 ${isActive ? 'text-[#84CC16]' : 'text-black hover:text-[#84CC16]'}`}
                 >
                   {link.label}
                 </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
           <div className="hidden flex-shrink-0 items-center gap-3 md:flex">
             <Link
               href="tel:7752293115"
-              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#6B46C1] to-[#7C3AED] px-4 py-2 text-white shadow-[0_10px_22px_rgba(107,70,193,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(107,70,193,0.35)]"
+              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#1B4332] to-[#2D6A4F] px-4 py-2 text-white shadow-[0_10px_22px_rgba(45,106,79,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(45,106,79,0.35)]"
             >
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15">
                 <Phone size={18} className="text-white" />
@@ -83,7 +83,7 @@ export default function Navbar() {
 
             <a
               href="mailto:ljcleaningsandmaintenance@gmail.com"
-              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#6B46C1] to-[#7C3AED] px-4 py-2 text-white shadow-[0_10px_22px_rgba(107,70,193,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(107,70,193,0.35)]"
+              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#1B4332] to-[#2D6A4F] px-4 py-2 text-white shadow-[0_10px_22px_rgba(45,106,79,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(45,106,79,0.35)]"
             >
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15">
                 <Mail size={18} className="text-white" />
@@ -97,7 +97,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="inline-flex items-center justify-center p-2 text-gray-700 hover:text-[#6B46C1] transition-colors md:hidden"
+            className="inline-flex items-center justify-center p-2 text-gray-700 hover:text-[#1B4332] transition-colors md:hidden"
             aria-label="Toggle menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -116,7 +116,7 @@ export default function Navbar() {
                   key={link.id}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-colors ${isActive ? 'bg-[#f2efff] text-[#6B46C1]' : 'text-gray-600 hover:bg-gray-50'}`}
+                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-colors ${isActive ? 'bg-[#f3f4f6] text-[#84CC16]' : 'text-black hover:bg-gray-50'}`}
                 >
                   {link.label}
                 </Link>
@@ -124,8 +124,8 @@ export default function Navbar() {
             })}
 
             <div className="mt-3 border-t border-gray-100 pt-3">
-              <Link href="tel:7752293115" className="flex items-center gap-3 rounded-lg bg-[#f2efff] p-3">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#6B46C1]">
+              <Link href="tel:7752293115" className="flex items-center gap-3 rounded-lg bg-[#f3f4f6] p-3">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#1B4332]">
                   <Phone size={16} className="text-white" />
                 </div>
                 <div>

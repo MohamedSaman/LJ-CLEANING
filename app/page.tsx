@@ -36,13 +36,13 @@ export default function HomePage() {
             {/* Left: Copy */}
             <div>
               <div className="fade-up fade-up-1 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-12"
-                style={{ background: 'rgba(107,70,193,0.1)', color: '#6B46C1', border: '1px solid rgba(107,70,193,0.2)' }}>
+                style={{ background: 'rgba(45,106,79,0.1)', color: '#1B4332', border: '1px solid rgba(45,106,79,0.2)' }}>
                 <Sparkles size={14} />
                 Spotless Spaces · Stress-Free Living
               </div>
 
               <h1 className="fade-up fade-up-2 text-5xl md:text-6xl lg:text-7xl font-black leading-[1.02] mb-6"
-                style={{ fontFamily: 'var(--font-display)', color: '#1E1B4B' }}>
+                style={{ fontFamily: 'var(--font-display)', color: '#0e3122' }}>
                 Where Cleanliness Meets{' '}
 
 
@@ -57,7 +57,7 @@ export default function HomePage() {
                 <Link
                   href="/quote"
                   className="btn-pulse inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-white font-semibold text-base transition-all hover:scale-105"
-                  style={{ background: 'linear-gradient(135deg, #6B46C1, #4F46E5)' }}
+                  style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}
                 >
                   <Sparkles size={18} />
                   Book My Cleaning
@@ -66,7 +66,7 @@ export default function HomePage() {
                 <Link
                   href="/services"
                   className="inline-flex items-center gap-2 px-7 py-4 rounded-full font-semibold text-base transition-all hover:scale-105"
-                  style={{ background: 'white', color: '#6B46C1', border: '2px solid #6B46C1' }}
+                  style={{ background: 'white', color: '#1B4332', border: '2px solid #1B4332' }}
                 >
                   View Services
                 </Link>
@@ -106,11 +106,11 @@ export default function HomePage() {
       </section>
 
       {/* ── TICKER ────────────────────────────────────── */}
-      <section className="overflow-hidden py-4" style={{ background: '#1E1B4B' }}>
+      <section className="overflow-hidden py-4" style={{ background: '#1B4332' }}>
         <div className="ticker-track flex gap-0 whitespace-nowrap w-max">
           {[...TICKER, ...TICKER].map((item, i) => (
-            <span key={i} className="inline-flex items-center gap-4 px-6 text-sm font-bold tracking-widest text-purple-200">
-              {item} <span className="text-purple-500">✦</span>
+            <span key={i} className="inline-flex items-center gap-4 px-6 text-sm font-bold tracking-widest text-green-100">
+              {item} <span className="text-lime-400">✦</span>
             </span>
           ))}
         </div>
@@ -133,10 +133,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4"
-              style={{ background: '#EDE9FE', color: '#6B46C1' }}>
+              style={{ background: '#F3F4F6', color: '#1B4332' }}>
               Our Services
             </span>
-            <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: 'var(--font-display)', color: '#1E1B4B' }}>
+            <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: 'var(--font-display)', color: '#1B4332' }}>
               Everything Clean,<br />
               <span className="gradient-text">Nothing Missed</span>
             </h2>
@@ -151,7 +151,7 @@ export default function HomePage() {
               
               return (
                 <div key={i} className="service-card rounded-2xl overflow-hidden shadow-sm"
-                  style={{ border: '1px solid rgba(107,70,193,0.1)' }}>
+                  style={{ border: '1px solid rgba(45,106,79,0.1)' }}>
                   <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                     <Image
                       src={imageSrc}
@@ -161,7 +161,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="p-6" style={{ background: '#F8F7FF' }}>
-                    <h3 className="font-bold text-lg mb-2" style={{ color: '#1E1B4B', fontFamily: 'var(--font-display)' }}>{s.title}</h3>
+                    <h3 className="font-bold text-lg mb-2" style={{ color: '#1B4332', fontFamily: 'var(--font-display)' }}>{s.title}</h3>
                     <p className="text-slate-500 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link href="/services"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold text-white transition-all hover:scale-105"
-              style={{ background: 'linear-gradient(135deg, #6B46C1, #4F46E5)' }}>
+              style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}>
               View All Services <ArrowRight size={16} />
             </Link>
           </div>
@@ -180,16 +180,16 @@ export default function HomePage() {
       </section>
 
       {/* ── WHY US ────────────────────────────────────── */}
-      <section style={{ background: 'linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%)' }} className="py-20">
+      <section style={{ background: 'linear-gradient(135deg, #F3F4F6 0%, #E0E7FF 100%)' }} className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
               <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4"
-                style={{ background: 'rgba(107,70,193,0.12)', color: '#6B46C1' }}>
+                style={{ background: 'rgba(45,106,79,0.12)', color: '#1B4332' }}>
                 Why Choose Us
               </span>
               <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6"
-                style={{ fontFamily: 'var(--font-display)', color: '#1E1B4B' }}>
+                style={{ fontFamily: 'var(--font-display)', color: '#1B4332' }}>
                 A Clean Space Is a<br />
                 <span className="gradient-text">Happy Space</span>
               </h2>
@@ -205,14 +205,14 @@ export default function HomePage() {
                   'Satisfaction guaranteed on every visit',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle size={20} className="shrink-0 mt-0.5" style={{ color: '#6B46C1' }} />
+                    <CheckCircle size={20} className="shrink-0 mt-0.5" style={{ color: '#1B4332' }} />
                     <span className="text-slate-700 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link href="/quote"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white transition-all hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, #6B46C1, #4F46E5)' }}>
+                style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}>
                 Book My Cleaning<ArrowRight size={16} />
               </Link>
             </div>
@@ -226,8 +226,8 @@ export default function HomePage() {
                 { icon: <ThumbsUp size={28} />, title: 'Satisfaction Guarantee', desc: 'Not happy? We\'ll make it right.' },
               ].map((item, i) => (
                 <div key={i} className="service-card bg-white rounded-2xl p-6 shadow-sm">
-                  <div className="mb-3" style={{ color: '#6B46C1' }}>{item.icon}</div>
-                  <h4 className="font-bold text-sm mb-1" style={{ color: '#1E1B4B' }}>{item.title}</h4>
+                  <div className="mb-3" style={{ color: '#1B4332' }}>{item.icon}</div>
+                  <h4 className="font-bold text-sm mb-1" style={{ color: '#1B4332' }}>{item.title}</h4>
                   <p className="text-xs text-slate-500">{item.desc}</p>
                 </div>
               ))}
@@ -237,21 +237,21 @@ export default function HomePage() {
       </section>
 
       {/* ── FINAL CTA ─────────────────────────────────── */}
-      <section style={{ background: 'linear-gradient(135deg, #1E1B4B 0%, #312E81 100%)' }} className="py-20">
+      <section style={{ background: 'linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%)' }} className="py-20">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <Sparkles size={36} className="mx-auto mb-5 text-purple-400" />
+          <Sparkles size={36} className="mx-auto mb-5 text-lime-300" />
           <h2 className="text-4xl md:text-5xl font-black text-white mb-5"
             style={{ fontFamily: 'var(--font-display)' }}>
             Ready for a Spotless<br />
-            <span className="text-purple-300">Home or Office?</span>
+            <span className="text-green-200">Home or Office?</span>
           </h2>
-          <p className="text-purple-300 mb-8 text-lg">
+          <p className="text-green-200 mb-8 text-lg">
             Get a personalised quote in minutes. No obligation, no hidden fees.
           </p>
           <Link
             href="/quote"
             className="btn-pulse inline-flex items-center gap-3 px-10 py-4 rounded-full text-white font-bold text-lg transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #7C3AED, #4F46E5)' }}
+            style={{ background: 'linear-gradient(135deg, #2D6A4F, #84CC16)' }}
           >
             <Sparkles size={20} />
             Book Now

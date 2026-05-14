@@ -90,7 +90,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #6b46c1, #4f46e5);
+  background: linear-gradient(135deg, #4e7026, #95e835);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -171,6 +171,6 @@ body {
 
 /* Firefox Scrollbar */
 * {
-  scrollbar-color: #60a5fa transparent;
+  scrollbar-color: #398141 transparent;
   scrollbar-width: thin;
 }

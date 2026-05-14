@@ -23,8 +23,8 @@ const services = [
       'Glass and window wiping',
     ],
     frequency: 'Daily, weekly, fortnightly, or custom schedule',
-    color: '#F3F0FF',
-    accent: '#6B46C1',
+    color: '#F3F4F6',
+    accent: '#1B4332',
   },
   {
     icon: '💼',
@@ -41,8 +41,8 @@ const services = [
       'Floor care and vacuuming',
     ],
     frequency: 'Before/after hours or weekend sessions available',
-    color: '#EEF2FF',
-    accent: '#4F46E5',
+    color: '#F3F4F6',
+    accent: '#84CC16',
   },
   {
     icon: '🏡',
@@ -150,7 +150,7 @@ const services = [
     ],
     frequency: 'One-off or regular schedule',
     color: '#F5F3FF',
-    accent: '#7C3AED',
+    accent: '#2D6A4F',
   },
   {
     icon: '🧹',
@@ -168,7 +168,7 @@ const services = [
     ],
     frequency: 'Tailored to your specific requirements',
     color: '#F8F7FF',
-    accent: '#6B46C1',
+    accent: '#1B4332',
   },
 ]
 
@@ -178,23 +178,23 @@ export default function ServicesPage() {
       {/* Header */}
       <section
         className="pt-32 pb-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "linear-gradient(135deg, rgba(30,27,75,0.92) 0%, rgba(49,46,129,0.92) 100%), url('/images/bg.png')" }}
+        style={{ backgroundImage: "linear-gradient(135deg, rgba(11,61,46,0.92) 0%, rgba(24,79,54,0.92) 100%), url('/images/bg.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-5"
-            style={{ background: 'rgba(167,139,250,0.15)', color: '#c4b5fd', border: '1px solid rgba(167,139,250,0.2)' }}>
+            style={{ background: 'rgba(15,23,42,0.04)', color: '#1B4332', border: '1px solid rgba(27,67,50,0.08)' }}>
             <Sparkles size={13} /> Our Services
           </span>
           <h1 className="text-5xl md:text-6xl font-black text-white mb-5"
             style={{ fontFamily: 'var(--font-display)' }}>
             Everything We Offer
           </h1>
-          <p className="text-purple-300 text-lg max-w-xl mx-auto">
+          <p className="text-green-200 text-lg max-w-xl mx-auto">
             From one-off deep cleans to ongoing commercial contracts — we&apos;ve got the right service for every space and situation.
           </p>
           <Link href="/quote"
             className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #7C3AED, #4F46E5)' }}>
+            style={{ background: 'linear-gradient(135deg, #2D6A4F, #84CC16)' }}>
             <Sparkles size={16} /> Book my cleaning <ArrowRight size={16} />
           </Link>
         </div>
@@ -229,13 +229,13 @@ export default function ServicesPage() {
                   key={i}
                   className="service-card rounded-2xl overflow-hidden border bg-cover bg-center bg-no-repeat"
                   style={{
-                    borderColor: 'rgba(107,70,193,0.1)',
+                    borderColor: 'rgba(45,106,79,0.1)',
                     backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.50) 100%), url('/images/our_services/${imageName}')`,
                   }}
                 >
                   <div className="p-6">
                     <div className="text-4xl mb-3">{s.icon}</div>
-                    <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'var(--font-display)', color: '#1E1B4B' }}>
+                    <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'var(--font-display)', color: '#1B4332' }}>
                       {s.title}
                     </h2>
                     <p className="text-sm font-medium" style={{ color: s.accent }}>{s.tagline}</p>
@@ -244,7 +244,7 @@ export default function ServicesPage() {
                   <div className="p-6 bg-white/88 backdrop-blur-[2px]">
                     <p className="text-slate-600 text-sm leading-relaxed mb-5">{s.description}</p>
 
-                    <h4 className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#1E1B4B' }}>
+                    <h4 className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#1B4332' }}>
                       What&apos;s Included
                     </h4>
                     <ul className="space-y-2 mb-5">
@@ -274,7 +274,7 @@ export default function ServicesPage() {
         style={{ backgroundImage: "linear-gradient(135deg, rgba(238,242,255,0.96), rgba(221,214,254,0.96)), url('/images/bg.png')" }}
       >
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-black mb-4" style={{ fontFamily: 'var(--font-display)', color: '#1E1B4B' }}>
+          <h2 className="text-4xl font-black mb-4" style={{ fontFamily: 'var(--font-display)', color: '#1B4332' }}>
             Not Sure Which Service<br />
             <span className="gradient-text">You Need?</span>
           </h2>
@@ -283,7 +283,7 @@ export default function ServicesPage() {
           </p>
           <Link href="/quote"
             className="inline-flex items-center gap-2 px-9 py-4 rounded-full text-white font-bold text-base transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #6B46C1, #4F46E5)' }}>
+            style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}>
             <Sparkles size={18} />
             Book my cleaning
             <ArrowRight size={16} />
