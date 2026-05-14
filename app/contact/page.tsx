@@ -15,10 +15,6 @@ export default function ContactPage() {
         style={{ backgroundImage: "linear-gradient(135deg, rgba(11,61,46,0.92) 0%, rgba(24,79,54,0.92) 100%), url('/images/bg.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-5"
-            style={{ background: 'rgba(15,23,42,0.04)', color: '#1B4332', border: '1px solid rgba(27,67,50,0.08)' }}>
-            <Sparkles size={13} /> Contact Us
-          </span>
           <h1 className="text-5xl md:text-6xl font-black text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>
             Let&apos;s Talk Clean Spaces
           </h1>

@@ -77,18 +77,15 @@ export default function AboutPage() {
       {/* Header */}
       <section
         className="pt-32 pb-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "linear-gradient(135deg, rgba(11,61,46,0.92) 0%, rgba(24,79,54,0.92) 100%), url('/images/bg.png')" }}
+        style={{ backgroundImage: "linear-gradient(135deg, rgba(6,26,20,0.82) 0%, rgba(6,26,20,0.68) 100%), url('/images/abuj3.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-5"
-            style={{ background: 'rgba(15,23,42,0.04)', color: '#1B4332', border: '1px solid rgba(27,67,50,0.08)' }}>
-            <Sparkles size={13} /> About Us
-          </span>
           <h1 className="text-5xl md:text-6xl font-black text-white mb-5"
-            style={{ fontFamily: 'var(--font-display)' }}>
+            style={{ fontFamily: 'var(--font-display)', textShadow: '0 3px 18px rgba(0,0,0,0.55)' }}>
             Who We Are
           </h1>
-          <p className="text-green-200 text-lg max-w-lg mx-auto">
+          <p className="text-green-100 text-lg max-w-lg mx-auto"
+            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}>
             LJ Cleaning &amp; Maintenance is a dedicated cleaning service committed to delivering spotless results for every client.
           </p>
         </div>
