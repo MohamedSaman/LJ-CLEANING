@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, Phone, X } from 'lucide-react'
+import { Mail, Menu, Phone, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/constants'
 
 export default function Navbar() {
@@ -67,7 +67,7 @@ export default function Navbar() {
             })}
           </nav>
 
-          <div className="hidden flex-shrink-0 md:flex">
+          <div className="hidden flex-shrink-0 items-center gap-3 md:flex">
             <Link
               href="tel:7752293115"
               className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#6B46C1] to-[#7C3AED] px-4 py-2 text-white shadow-[0_10px_22px_rgba(107,70,193,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(107,70,193,0.35)]"
@@ -80,6 +80,19 @@ export default function Navbar() {
                 <p className="text-[14px] font-extrabold tracking-tight text-white">775-229-3115</p>
               </div>
             </Link>
+
+            <a
+              href="mailto:ljcleaningsandmaintenance@gmail.com"
+              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#6B46C1] to-[#7C3AED] px-4 py-2 text-white shadow-[0_10px_22px_rgba(107,70,193,0.28)] transition-shadow hover:shadow-[0_15px_30px_rgba(107,70,193,0.35)]"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15">
+                <Mail size={18} className="text-white" />
+              </div>
+              <div className="leading-tight">
+                <p className="text-[11px] font-medium text-white/85">Email</p>
+                <p className="text-[14px] font-extrabold tracking-tight text-white">Contact Us</p>
+              </div>
+            </a>
           </div>
 
           <button

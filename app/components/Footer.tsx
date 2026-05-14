@@ -2,23 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Facebook, Mail, Phone, Sparkles, MapPin } from 'lucide-react'
 
-const services = [
-  'Commercial Cleaning',
-  'Office Cleaning',
-  'House Cleaning',
-  'Deep Cleaning',
-  'Move-Out Cleaning',
-  'Airbnb Cleaning',
-  'Pressure Water Blasting',
-  'Window Cleaning',
-]
-
 export default function Footer() {
   return (
     <footer style={{ background: 'linear-gradient(135deg, #1E1B4B 0%, #312E81 100%)' }}>
       {/* CTA Banner */}
-      <div className="border-b border-purple-700/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div
+        className="border-b border-purple-700/40"
+        style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.18) 0%, rgba(79,70,229,0.12) 100%)' }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-white text-2xl font-bold mb-1" style={{ fontFamily: 'var(--font-display)' }}>
               Ready for a Spotless Space?
@@ -37,8 +29,8 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -63,20 +55,6 @@ export default function Footer() {
               <Facebook size={16} />
               Follow on Facebook
             </a>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-4">Services</h4>
-            <ul className="space-y-2">
-              {services.map(s => (
-                <li key={s}>
-                  <Link href="/services" className="text-purple-300 hover:text-white text-sm transition-colors">
-                    {s}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Opening Hours */}
@@ -122,7 +100,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-purple-800/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-purple-400 text-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-purple-400 text-xs">
           <p>© {new Date().getFullYear()} LJ Cleaning &amp; Maintenance. All rights reserved.</p>
           <p>Built with care for a spotless experience.</p>
         </div>
