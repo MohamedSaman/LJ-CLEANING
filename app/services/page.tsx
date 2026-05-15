@@ -178,7 +178,7 @@ export default function ServicesPage() {
       {/* Header */}
       <section
         className="pt-32 pb-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "linear-gradient(135deg, rgba(6,26,20,0.82) 0%, rgba(6,26,20,0.68) 100%), url('/images/abuj2.png')" }}
+        style={{ backgroundImage: "linear-gradient(135deg, rgba(6,26,20,0.82) 0%, rgba(6,26,20,0.68) 100%), url('/images/services.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-black text-white mb-5"

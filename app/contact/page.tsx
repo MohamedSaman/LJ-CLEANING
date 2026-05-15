@@ -12,13 +12,14 @@ export default function ContactPage() {
     <>
       <section
         className="pt-32 pb-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "linear-gradient(135deg, rgba(11,61,46,0.92) 0%, rgba(24,79,54,0.92) 100%), url('/images/bg.png')" }}
+        style={{ backgroundImage: "linear-gradient(135deg, rgba(6,26,20,0.82) 0%, rgba(6,26,20,0.68) 100%), url('/images/contact.png')" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-black text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>
+          <h1 className="text-5xl md:text-6xl font-black text-white mb-4" style={{ fontFamily: 'var(--font-display)', textShadow: '0 3px 18px rgba(0,0,0,0.55)' }}>
             Let&apos;s Talk Clean Spaces
           </h1>
-          <p className="text-green-200 text-lg max-w-xl mx-auto">
+          <p className="text-green-100 text-lg max-w-xl mx-auto"
+            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}>
             Reach out for a quote, a quick question, or to discuss the right cleaning plan for your home or business.
           </p>
         </div>
