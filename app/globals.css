@@ -61,6 +61,68 @@
   }
 }
 
+/* Action Button Animations */
+@keyframes actionGradientPulse {
+  0%,
+  100% {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #84cc16 100%);
+    box-shadow: 0 4px 15px rgba(27, 67, 50, 0.25);
+  }
+  50% {
+    background: linear-gradient(135deg, #2d6a4f 0%, #84cc16 50%, #95e835 100%);
+    box-shadow: 0 6px 20px rgba(132, 204, 22, 0.35);
+  }
+}
+
+@keyframes buttonGlowPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 15px rgba(27, 67, 50, 0.15),
+      0 0 20px rgba(132, 204, 22, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 6px 25px rgba(27, 67, 50, 0.25),
+      0 0 30px rgba(132, 204, 22, 0.35);
+  }
+}
+
+@keyframes subtlePulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 4px 15px rgba(27, 67, 50, 0.25);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(132, 204, 22, 0.4);
+  }
+}
+
+@keyframes arrowSlide {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.action-btn-pulse {
+  animation: buttonGlowPulse 1.8s ease-in-out infinite;
+  position: relative;
+}
+
+/* Gradient buttons get enhanced animation on hover */
+.action-btn-pulse[style*="linear-gradient"]:hover {
+  animation: actionGradientPulse 1.6s ease-in-out infinite;
+}
+
+.action-btn-arrow {
+  animation: arrowSlide 1.8s ease-in-out infinite;
+  display: inline-block;
+}
+
 .fade-up {
   animation: fadeUp 0.7s ease forwards;
 }

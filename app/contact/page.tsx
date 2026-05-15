@@ -43,7 +43,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-xl font-bold mb-2" style={{ fontFamily: 'var(--font-display)', color: '#1B4332' }}>Request a Quote</h2>
               <p className="text-slate-600 text-sm mb-4">Use the quote form and we&apos;ll reply within 24 hours.</p>
-              <span className="inline-flex items-center gap-2 font-semibold text-[#1B4332]">Open Quote Form <ArrowRight size={16} /></span>
+              <span className="inline-flex items-center gap-2 font-semibold text-[#1B4332]">Open Quote Form <span className="action-btn-arrow"><ArrowRight size={16} /></span></span>
             </Link>
 
             <div className="service-card rounded-2xl p-6 bg-[#F8F7FF] border border-[rgba(45,106,79,0.1)]">

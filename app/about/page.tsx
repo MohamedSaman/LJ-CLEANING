@@ -116,9 +116,9 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/quote"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105"
+                  className="action-btn-pulse inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105"
                   style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}>
-                  Book my cleaning <ArrowRight size={16} />
+                  Book my cleaning <span className="action-btn-arrow"><ArrowRight size={16} /></span>
                 </Link>
                 <a
                   href="https://www.facebook.com/share/18qsxHhZXN/?mibextid=wwXIfr"

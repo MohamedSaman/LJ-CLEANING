@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <Link
             href="/quote"
-            className="shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105 hover:shadow-lg"
+            className="action-btn-pulse shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105 hover:shadow-lg"
             style={{ background: 'linear-gradient(135deg, #2D6A4F, #84CC16)' }}
           >
             <Sparkles size={16} />
@@ -90,9 +90,9 @@ export default function Footer() {
             </ul>
             <Link
               href="/quote"
-              className="mt-5 inline-block px-5 py-2.5 rounded-full border border-green-500 text-green-100 text-sm hover:bg-green-700/30 transition-colors"
+              className="action-btn-pulse inline-block px-5 py-2.5 rounded-full border border-green-500 text-green-100 text-sm hover:bg-green-700/30 transition-colors"
             >
-              Book my cleaning →
+              Book my cleaning <span className="action-btn-arrow">→</span>
             </Link>
           </div>
         </div>

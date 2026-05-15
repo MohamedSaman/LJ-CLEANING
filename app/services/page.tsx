@@ -190,9 +190,9 @@ export default function ServicesPage() {
             From one-off deep cleans to ongoing commercial contracts — we&apos;ve got the right service for every space and situation.
           </p>
           <Link href="/quote"
-            className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105"
+            className="action-btn-pulse mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold transition-all hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #2D6A4F, #84CC16)' }}>
-            <Sparkles size={16} /> Book my cleaning <ArrowRight size={16} />
+            <Sparkles size={16} /> Book my cleaning <span className="action-btn-arrow"><ArrowRight size={16} /></span>
           </Link>
         </div>
       </section>

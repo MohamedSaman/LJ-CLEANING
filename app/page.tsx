@@ -56,16 +56,16 @@ export default function HomePage() {
               <div className="fade-up fade-up-4 flex flex-wrap gap-4 mb-10">
                 <Link
                   href="/quote"
-                  className="btn-pulse inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-white font-semibold text-base transition-all hover:scale-105"
+                  className="action-btn-pulse inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-white font-semibold text-base transition-all hover:scale-105"
                   style={{ background: 'linear-gradient(135deg, #1B4332, #84CC16)' }}
                 >
                   <Sparkles size={18} />
                   Book My Cleaning
-                  <ArrowRight size={16} />
+                  <span className="action-btn-arrow"><ArrowRight size={16} /></span>
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 px-7 py-4 rounded-full font-semibold text-base transition-all hover:scale-105"
+                  className="action-btn-pulse inline-flex items-center gap-2 px-7 py-4 rounded-full font-semibold text-base transition-all hover:scale-105"
                   style={{ background: 'white', color: '#1B4332', border: '2px solid #1B4332' }}
                 >
                   View Services
@@ -250,12 +250,12 @@ export default function HomePage() {
           </p>
           <Link
             href="/quote"
-            className="btn-pulse inline-flex items-center gap-3 px-10 py-4 rounded-full text-white font-bold text-lg transition-all hover:scale-105"
+            className="action-btn-pulse inline-flex items-center gap-3 px-10 py-4 rounded-full text-white font-bold text-lg transition-all hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #2D6A4F, #84CC16)' }}
           >
             <Sparkles size={20} />
             Book Now
-            <ArrowRight size={18} />
+            <span className="action-btn-arrow"><ArrowRight size={18} /></span>
           </Link>
         </div>
       </section>
